@@ -91,6 +91,27 @@ a:hover {
     width: 100%;
     padding-top: 70px;
 }
+#second1 {
+    background-image: url('https://media.istockphoto.com/id/1181366400/photo/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-on.jpg?s=612x612&w=0&k=20&c=jWUMrHgjMY9zQXsAwZFb1jfM6KxZE16-IXI1bvehjQM=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+}
+#second2 {
+    background-image: url('https://media.istockphoto.com/id/529101533/photo/water-conservation-in-europe-water-globe-in-the-hands.jpg?s=612x612&w=0&k=20&c=2sjCPSmivry5EL3FJ11l45wu4us5Q5CZrl-F779-ok0=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
@@ -155,3 +176,56 @@ a:hover {
   font-weight: bold;
 
 }
+ #footer {
+        /* background-color: #111; */
+        background: linear-gradient(rgb(6, 66, 150),rgba(12, 136, 6, 0.882));
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: Arial, sans-serif;
+    }
+
+    #footer div {
+        margin: 10px 0;
+    }
+
+    #footer a {
+        color: white;
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    #footer a:hover {
+        color: #f5c518;
+    }
+
+    #footer img {
+        width: 30px;
+        margin-left: 10px;
+        transition: transform 0.2s;
+    }
+
+    #footer img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        #footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #footer div {
+            margin: 10px 0;
+        }
+
+        #footer a {
+            display: inline-block;
+            margin: 8px;
+        }
+    }
+
