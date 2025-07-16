@@ -1,0 +1,232 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url('cursor.cur'), auto;
+    font-family: Arial, sans-serif;
+    
+}
+
+#header {
+    border: 2px solid rgba(255, 128, 0, 0.793);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(6, 66, 150), rgba(12, 136, 6, 0.882));
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+#header2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.7rem;      
+    color: yellow;
+    padding: 5px 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+a:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+.recycle-icons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.recycle-icon {
+    width: 50px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.recycle-icon:hover {
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 30px;
+}
+
+#first {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/05/17/18/climate-2584727_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+    
+    
+}
+
+#second {
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/06/09/51/ai-generated-7573584_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+}
+#second1 {
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/16/07/34/dump-6941409_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+}
+#second2 {
+    background-image: url('https://cdn.pixabay.com/photo/2023/10/16/06/08/seagull-8318516_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    a {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    
+    .recycle-icon {
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 8px 10px;
+    }
+    
+    a {
+        font-size: 0.9rem;
+        padding: 4px;
+    }
+    
+    .logo {
+        width: 50px;
+    }
+    
+    .recycle-icon {
+        width: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    a {
+        font-size: 0.8rem;
+    }
+    
+    #header2 {
+        gap: 5px;
+    }
+    
+    .logo {
+        width: 40px; 
+    }
+}
+.main-heading {
+ border: 5px solid orange;
+ border-radius: 20%;
+  text-align: center;
+  color:black;
+  margin-top: 20vh;
+  font-size: 10vw; /* Scales with screen width */
+  font-weight: bold;
+}
+.main-heading2{
+    border: 5px solid red;
+ border-radius: 20%;
+  text-align: center;
+  color:aqua;
+  margin-top: 20vh;
+  font-size: 10vw; /* Scales with screen width */
+  font-weight: bold;
+
+}
+ #footer {
+        /* background-color: #111; */
+        background: linear-gradient(rgb(6, 66, 150),rgba(12, 136, 6, 0.882));
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: Arial, sans-serif;
+    }
+
+    #footer div {
+        margin: 10px 0;
+    }
+
+    #footer a {
+        color: white;
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    #footer a:hover {
+        color: #f5c518;
+    }
+
+    #footer img {
+        width: 30px;
+        margin-left: 10px;
+        transition: transform 0.2s;
+    }
+
+    #footer img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        #footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #footer div {
+            margin: 10px 0;
+        }
+
+        #footer a {
+            display: inline-block;
+            margin: 8px;
+        }
+    }
+
